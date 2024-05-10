@@ -120,9 +120,20 @@ int main ()
 {
   	   int opcao=0; //Definindo as variáves
   	   int laco=1; //varável de repetição
-  	    
+  	   char senhadigitada[]="a";
+  	   int comparacao;
+  	   
+  	   printf("###Cartório da Ebac ###\n\n");
+  	   printf("Login de administrador!\n\nDigite a sua senha:");
+  	   scanf("%s",senhadigitada);
+  	   
+  	   comparacao = strcmp(senhadigitada, "admin");
+  	   
+  	   if(comparacao == 0)
+       {
+		system ("cls");
     	for(laco=1;laco=1;)//torna possivel repetção 
-    {
+      {
 
        system ("cls"); //responsavel por limpar a tela
 				  
@@ -166,5 +177,10 @@ int main ()
   	   	break;//volta ao inicio
 	   }
   	    
-    }
+   
+     } 
+  }
+  
+   else 
+       printf("Senha incoreta!");
 }
